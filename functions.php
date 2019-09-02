@@ -132,6 +132,24 @@ function themeConfig($form)
     );
     $form->addInput($ftEmail);
 
+    $ftCodePen = new Typecho_Widget_Helper_Form_Element_Text(
+        'ftCodePen',
+        NULL,
+        NULL,
+        _t('页脚联系方式:CodePen'),
+        _t('填入CodePen用户名')
+    );
+    $form->addInput($ftCodePen);
+
+    $ftLeetCode = new Typecho_Widget_Helper_Form_Element_Text(
+        'ftLeetCode',
+        NULL,
+        NULL,
+        _t('页脚联系方式:LeetCode'),
+        _t('填入LeetCode用户名')
+    );
+    $form->addInput($ftLeetCode);
+
     // $ftVisitor = new Typecho_Widget_Helper_Form_Element_Text(
     //     'ftVisitor',
     //     NULL,

@@ -34,10 +34,17 @@
             <?php endif; ?>
             <!--自定义添加-->
             <?php if ($this->options->ftCodePen) : ?>
-                <a href="mailto:<?php $this->options->ftCodePen(); ?>" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" id="ft-CodePen">
+                <a href="https://codepen.io/<?php $this->options->ftCodePen(); ?>" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" id="ft-CodePen">
                     <img src="<?php $this->options->themeUrl('image/icon/codepen.png'); ?>">
                 </a>
                 <label class="mdl-tooltip mdl-tooltip--top" for="ft-CodePen">CodePen</label>
+            <?php endif; ?>
+
+            <?php if ($this->options->ftLeetCode) : ?>
+                <a href="https://leetcode-cn.com/u/<?php $this->options->ftLeetCode(); ?>" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" id="ft-CodePen">
+                    <img src="<?php $this->options->themeUrl('image/icon/leetcode.png'); ?>">
+                </a>
+                <label class="mdl-tooltip mdl-tooltip--top" for="ft-CodePen">LeetCode</label>
             <?php endif; ?>
             <!--TODO 如果你需要其他图标, 可以到这下载: https://www.iconfont.cn/-->
         </div>
