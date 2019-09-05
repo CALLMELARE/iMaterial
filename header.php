@@ -70,23 +70,25 @@
                     </div>
                 </div>
             </form>
-            <div id="music-panel">
+
+            <!-- <div id="music-panel">
                 <div class="music-panel-w">
                     <div class="list-panel">
-                        <ul>
-                            <?php $musicList = musicList($this->options->musicList);
-                            foreach ($musicList as $i => $item) {
-                                $html = "<li data-src=\"{$item['src']}\">";
-                                $html .= ($i + 1) . '. ' . $item['name'];
+                        <ul> -->
+            <?php
+            /* $musicList = musicList($this->options->musicList);
+            foreach ($musicList as $i => $item) {
+                $html = "<li data-src=\"{$item['src']}\">";
+                $html .= ($i + 1) . '. ' . $item['name'];
 
-                                if (!empty($item['singer'])) {
-                                    $html .= " - " . $item['singer'];
-                                }
+                if (!empty($item['singer'])) {
+                    $html .= " - " . $item['singer'];
+                }
 
-                                $html .= "</li>";
-                                echo $html;
-                            } ?>
-                        </ul>
+                $html .= "</li>";
+                echo $html;
+            } */ ?>
+            <!-- </ul>
                     </div>
                     <div class="ctrl-group">
                         <button id="music-album" class=" mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">music_note</i>
@@ -103,7 +105,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
             <button class="mdl-button mdl-js-button mdl-button--icon no-pjax mdl-cell--hide-desktop mdl-cell--hide-tablet" id="index-button" style="margin-left: 8px;">
                 <i class="material-icons">view_list</i>
