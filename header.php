@@ -6,9 +6,6 @@
 
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
-    <!--    <meta http-equiv="Content-Type" content="text/html; charset=--><?php //$this->options->charset(); 
-                                                                            ?>
-    <!--" />-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -42,8 +39,6 @@
         typechoConf.siteUrl = '<?php $this->options->siteUrl() ?>';
         typechoConf.pageSize = '<?php $this->options->pageSize() ?>';
         typechoConf.pageTotalSize = '<?php $stat->publishedPostsNum() ?>';
-        typechoConf.musicAutoPlay = <?php echo ($this->options->musicCtrl && in_array('auto', $this->options->musicCtrl)) ? 'true' : 'false' ?>;
-        typechoConf.musicAutoNext = <?php echo ($this->options->musicCtrl && in_array('autoNext', $this->options->musicCtrl)) ? 'true' : 'false' ?>;
     </script>
 </head>
 
@@ -70,42 +65,6 @@
                     </div>
                 </div>
             </form>
-
-            <!-- <div id="music-panel">
-                <div class="music-panel-w">
-                    <div class="list-panel">
-                        <ul> -->
-            <?php
-            /* $musicList = musicList($this->options->musicList);
-            foreach ($musicList as $i => $item) {
-                $html = "<li data-src=\"{$item['src']}\">";
-                $html .= ($i + 1) . '. ' . $item['name'];
-
-                if (!empty($item['singer'])) {
-                    $html .= " - " . $item['singer'];
-                }
-
-                $html .= "</li>";
-                echo $html;
-            } */ ?>
-            <!-- </ul>
-                    </div>
-                    <div class="ctrl-group">
-                        <button id="music-album" class=" mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">music_note</i>
-                        </button>
-                        <div class="hide-panel">
-                            <div class="ctrl-panel">
-                                <button id="music-volume" class=" mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">volume_up</i></button>
-                                <button id="music-list" class=" mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">playlist_play</i></button>
-                                <button id="music-prev" class=" mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">skip_previous</i></button>
-                                <button id="music-play" class=" mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">play_circle_filled</i></button>
-                                <button id="music-next" class=" mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">skip_next</i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
 
             <button class="mdl-button mdl-js-button mdl-button--icon no-pjax mdl-cell--hide-desktop mdl-cell--hide-tablet" id="index-button" style="margin-left: 8px;">
                 <i class="material-icons">view_list</i>

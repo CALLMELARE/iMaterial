@@ -56,28 +56,6 @@ function themeConfig($form)
     );
     $form->addInput($drawerBlock->multiMode());
 
-    // $musicList = new Typecho_Widget_Helper_Form_Element_Textarea(
-    //     'musicList',
-    //     NULL,
-    //     NULL,
-    //     _t('背景音乐列表'),
-    //     _t('格式:<span style="color: darkred">歌曲url或者网易云id (空格)曲名 (空格)歌手,(歌手可省略, 逗号必须, 写完一条可以换一行)</span><br>例如:<br>448065 孤独な巡礼 川井憲次,<br>http://music.163.com/song/media/outer/url?id=2177197.mp3 Moon_River Audrey_Hepburn<br>没错就是这样😄,<i style="color: darkred">歌曲或者歌手名字有空格就用下划线代替吧,懒得适配了..</i> ')
-    // );
-
-    // $form->addInput($musicList);
-
-    // $musicCtrl = new Typecho_Widget_Helper_Form_Element_Checkbox(
-    //     'musicCtrl',
-    //     array(
-    //         'auto' => _t('自动播放'),
-    //         'autoNext' => _t('自动播放下一曲')
-    //     ),
-    //     array('auto', 'autoNext'),
-    //     _t('音乐播放控制'),
-    //     _t('谷歌浏览器可能会自动播放失败 (浏览器原因)')
-    // );
-    // $form->addInput($musicCtrl->multiMode());
-
     $siteTime = new Typecho_Widget_Helper_Form_Element_Text(
         'siteTime',
         NULL,
@@ -246,39 +224,6 @@ function RSSList($list_str)
             $result_item['cacheTime'] = $item_info[2];
         }
 
-        $result[] = $result_item;
-    }
-    return $result;
-}
-
-function musicList($list_str)
-{
-    $result = [];
-
-    $list_str = trim($list_str);
-    if (empty($list_str)) {
-        return $result;
-    }
-
-    $list_arr = explode(',', $list_str);
-    foreach ($list_arr as $list_item) {
-        $list_item = trim($list_item);
-        if (!$list_item) {
-            continue;
-        }
-        $item_info = explode(' ', $list_item);
-        if (count($item_info) < 2) {
-            continue;
-        }
-
-        $result_item['src'] = trim($item_info[0]);
-        if (is_numeric($result_item['src'])) {
-            $result_item['src'] = 'https://music.163.com/song/media/outer/url?id=' . $result_item['src'];
-        }
-        $result_item['name'] = trim($item_info[1]);
-        if (count($item_info) >= 2) {
-            $result_item['singer'] = trim($item_info[2]);
-        }
         $result[] = $result_item;
     }
     return $result;

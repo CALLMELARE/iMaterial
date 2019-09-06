@@ -101,14 +101,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                         <div class="label-item-desc mdl-typography--body-1">文章</div>
                     </div>
 
-                    <!-- <div id="label_comment_count" class="label-item">
-                        <div class="label-item-number mdl-typography--font-bold">
-                            <?php //$stat->publishedCommentsNum() 
-                                        ?>
-                        </div>
-                        <div class="label-item-desc mdl-typography--body-1">评论</div>
-                    </div> -->
-
                 </div>
             </div>
             <!--head-card-right-->
@@ -124,7 +116,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                 首页
             </a>
             <?php if (!$this->is('index')) : ?>
-                <a>
+                <a> 
                     <?php $this->archiveTitle(array(
                                     'category' => _t('分类 %s'),
                                     'search' => _t('包含关键字 %s'),
@@ -146,7 +138,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 ?>
 <div class="load-more-wrap" style="width: 100%;text-align: center">
     <a id="load-more" style="margin: 16px 0">
-        <span class="description">更多</span>
+        <span class="description">加载更多</span>
     </a>
     <div id="load-more-anim">
         <div class="cube1"></div>
