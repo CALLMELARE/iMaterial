@@ -1,6 +1,4 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-</div>
-
 
 <footer id="footer">
     <div class="footer-w">
@@ -67,7 +65,7 @@
         </div>
 
         <div class="footer-right" style="text-align: end">
-            <a class="mdl-color-text--primary   anim-line" style="opacity: 0.9" target="_blank" href="https://github.com/CALLMELARE/typecho_theme_md">
+            <a class="mdl-color-text--primary   anim-line" style="opacity: 0.9" target="_blank" href="https://github.com/CALLMELARE/iMaterial">
                 Theme
             </a>
             <br>

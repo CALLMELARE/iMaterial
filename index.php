@@ -25,5 +25,9 @@ if ($this->request->isAjax() && $this->request->get('page') > 1) {
 }
 
 if (!$this->request->isAjax()) {
+    $this->need('links.php');
+}
+
+if (!$this->request->isAjax()) {
     $this->need('footer.php');
 }
