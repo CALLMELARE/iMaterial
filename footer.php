@@ -39,10 +39,10 @@
             <?php endif; ?>
 
             <?php if ($this->options->ftLeetCode) : ?>
-                <a href="https://leetcode-cn.com/u/<?php $this->options->ftLeetCode(); ?>" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" id="ft-CodePen">
+                <a href="https://leetcode-cn.com/u/<?php $this->options->ftLeetCode(); ?>" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" id="ft-LeetCode">
                     <img src="<?php $this->options->themeUrl('image/icon/leetcode.png'); ?>">
                 </a>
-                <label class="mdl-tooltip mdl-tooltip--top" for="ft-CodePen">LeetCode</label>
+                <label class="mdl-tooltip mdl-tooltip--top" for="ft-LeetCode">LeetCode</label>
             <?php endif; ?>
             <!--TODO 如果你需要其他图标, 可以到这下载: https://www.iconfont.cn/-->
         </div>
