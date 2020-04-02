@@ -7,8 +7,8 @@
     <div class="links-item">
         <a href="http://www.kongjune.com/">KONGJUNE</a>
         |
-        <a href="https://greyishsong.github.io/">greyishsong</a>
+        <a href="https://greyishsong.ink">greyishsong</a>
         |
-        <a href="https://zrzzzz.github.io/">X Mεl0n</a>
+        <a href="https://www.zrzz.site">X Mεl0n</a>
     </div>
 </div>
