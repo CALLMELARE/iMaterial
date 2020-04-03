@@ -11,6 +11,12 @@
         url("../material/MaterialIcons-Regular.ttf") format('truetype');
 }
 
+.headline{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    border: #000 solid 0.2rem;
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -2435,3 +2441,4 @@ header {
         width: 100%;
     }
 }
+
